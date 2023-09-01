@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Afiliados{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Lista de Afiliados</h1>
+        <ul>
+            {% for afiliado in afiliados %}
+                <li><a href="{{ url_for('detalhes_afiliado', afiliado_id=afiliado.id) }}">{{ afiliado.nome }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+/* Estilos CSS para estilizar a aparência do painel */
+/* ... Estilos anteriores ... */
+
+/* Estilos adicionais para melhorar o visual */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Efeito de destaque no hover */
+a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilo para a lista de afiliados */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Transições suaves */
+ul {
+    /* ... Outros estilos ... */
+    transition: opacity 0.3s ease-in-out;
+}
+
+ul.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
